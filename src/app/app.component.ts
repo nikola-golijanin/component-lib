@@ -9,6 +9,19 @@ import { Card } from 'ui-controls';
 export class AppComponent {
   title = 'my-components';
   cards: Card[] = [
-    { title: 'Title example', description: 'Description example', link: 'link example' },
+    {
+      title: 'Title example',
+      description: 'Description example',
+      link: 'link example',
+    },
+    {
+      title: 'Title example2',
+      description: 'Description example2',
+      link: 'link example2',
+    },
   ];
+
+  onCardChange(cards: Card[]) {
+    console.log(cards);
+  }
 }
